@@ -1,0 +1,51 @@
+# The function of Addition adds two numbers
+
+def Addition (num1, num2):
+    sum = num1 + num2
+    return sum
+
+# Subtraction is a  function for subtracting num2 from num1
+def Subtraction (num1,num2):
+    sub = num1 - num2
+    return sub 
+
+#Division is  a function to divide two numbers;making sure that in the event of the denominator being 0, a remark on the calculation not being possible is printed
+def division (num1,num2):
+    if num2 == 0:
+        return "You cannot divide by zero"
+    divide =  num1 / num2  
+    return divide  
+
+# Multiplication is a function to multiply two numbers
+
+def multiplication (num1,num2):
+    multiply = num1 * num2
+    return multiply 
+
+
+# This allows the user to input values for two integers
+if __name__=="__main__" :
+   num1= int(input("enter a number: "))
+   num2= int(input("enter a number: "))
+
+   mult = multiplication (num1,num2)
+   div  = division (num1,num2)
+   Add  = Addition (num1,num2)
+   sub = Subtraction (num1,num2)
+   #This allows the user to pick the operation they want the two numbers to be involved in
+   Operation = (input("Enter an operation: \n add for addition, sub for subtraction,div for division and mult for multiplication "))
+if Operation == "mult" :  
+    print("multiplication = ", mult)
+
+if Operation == "div" :  
+    print("Division = ", div)
+
+if Operation == "add" :  
+    print("Addition = ", Add)   
+
+if Operation == "sub" :  
+    print("subtraction = ", sub)
+
+
+
+
